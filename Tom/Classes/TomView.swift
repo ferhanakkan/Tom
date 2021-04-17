@@ -37,6 +37,7 @@ final public class TomView: UIView {
 
 public extension TomView {
 
+    /// Starts animation for each lines
     func start() {
         isAnimationEnabled = true
 
@@ -45,6 +46,7 @@ public extension TomView {
         }
     }
 
+    /// Stops animation for each lines
     func stop() {
         isAnimationEnabled = false
 
@@ -86,7 +88,7 @@ private extension TomView {
             }
         }
     }
-
+    
     func addLinesToStackView() {
         for _ in 0 ..< configuration.lineCount {
             let lineView: LineView = .init(
